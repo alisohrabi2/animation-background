@@ -3,3 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background: linear-gradient(to right, rgb(255, 1, 1), rgb(252, 252, 2), rgb(1, 250, 113));
+    height: 100vh;
+    background-size: 400% 400%;
+    animation: changebackground 10s infinite;
+}
+
+@keyframes changebackground {
+    0% {
+        background-position: 0% 25%;
+    }
+
+    25% {
+        background-position: 25% 50%;
+    }
+
+    50% {
+        background-position: 50% 75%;
+    }
+
+    75% {
+        background-position: 75% 100%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
